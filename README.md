@@ -48,6 +48,48 @@ uv --version
 
 ```
 
+## Use uv to create a python project
+
+Go to the root folder where you want to put your project. Then run the below commands
+
+```bash
+# create a project
+uv init my-app
+
+# goto the project folder
+cd my-app
+
+# check the generated files
+> tree -L 3 -a .
+.
+├── main.py
+├── pyproject.toml
+├── .python-version
+└── README.md
+
+1 directory, 4 files
+```
+
+You should see the below files
+
+- **pyproject.toml**: The new standard for defining dependencies (replaces requirements.txt).
+- **.python-version**: Locks the Python version for this specific project.
+- **main.py**: A simple "Hello World" entry point.
+- **README.md**: Read me of your project
+
+### Set up python version and dependencies
+
+```bash
+# Set a specific Python version for your project
+uv python pin 3.14
+
+# add packages to your project
+uv add notebook
+
+# add dev packages to your project
+uv add --dev ruff pytest 
+```
+
 
 
 
