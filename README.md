@@ -28,7 +28,26 @@ virtualenv, and more`. Therefore, uv is an `all-in-one solution`.
 
 > You don’t need to have Python installed on your system to install uv.
 
-## Install uv
+## Install uv 
+
+Based on your OS, the installation guide is different. You can find the official doc [here](https://github.com/astral-sh/uv)
+
+
+### Linux/MacOS
+
+Under Linux, it's quite simple. Just use the provided installation script.
+
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# you may need to restart your shell
+
+# check uv version
+uv --version
+
+```
+
 
 
 
