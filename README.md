@@ -131,8 +131,7 @@ source .venv/bin/activate
 
 # to deactivate
 deactivate
-
-```un
+```
 
 > If you don't specifier a name for your venv, the folder name will be .venv
 > It's better for uv to locate the virtual env, if uv can't find one, when you run `uv run main.py`, uv will
